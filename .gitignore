@@ -1,4 +1,5 @@
 .obsidian/
-*/obj/
-*/bin/
+obj/
+bin/
 /AbstractFactory/
+.idea/
