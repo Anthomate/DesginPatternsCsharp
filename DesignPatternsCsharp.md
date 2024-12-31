@@ -92,6 +92,34 @@ Le **Pattern Prototype** permet de :
 
 ---
 
+### Adapter
+
+Le **Pattern Adapter** est un design pattern structurel qui permet de connecter des interfaces incompatibles en convertissant l'interface d'une classe existante en une autre interface attendue par les clients. Ce pattern est particulièrement utile pour intégrer des classes ou des systèmes tiers dans une application sans modifier leur code source.
+
+Le **Pattern Adapter** permet de :
+
+- Faciliter la compatibilité entre des classes avec des interfaces différentes.
+- Réutiliser des classes existantes dans un contexte où leur interface n'est pas compatible avec les exigences actuelles.
+- Favoriser l'intégration de systèmes ou de bibliothèques externes.
+
+> **Avantage :** Le **Adapter** améliore l'interopérabilité et favorise la réutilisation de code existant sans nécessiter de modifications importantes. Cela permet de réduire le couplage entre les composants d'une application.
+
+---
+
+### Bridge
+
+Le **Pattern Bridge** est un design pattern structurel qui sépare l'abstraction d'une classe de son implémentation, permettant ainsi de les développer indépendamment. Ce pattern est utile lorsque vous avez besoin de découpler des hiérarchies complexes pour améliorer la flexibilité et la maintenabilité.
+
+Le **Pattern Bridge** permet de :
+
+- Découpler une abstraction et son implémentation pour qu'elles puissent évoluer indépendamment.
+- Réduire le couplage entre des classes abstraites et leurs implémentations.
+- Favoriser l'extension et la réutilisation de code en évitant les combinaisons excessives dans les hiérarchies de classes.
+
+> **Avantage :** Le **Bridge** améliore la modularité et réduit la complexité en permettant de modifier ou étendre les abstractions et les implémentations de manière indépendante.
+
+---
+
 ## Annexe C#
 
 ### Composition
