@@ -120,6 +120,20 @@ Le **Pattern Bridge** permet de :
 
 ---
 
+### Decorator
+
+Le **Pattern Decorator** est un design pattern structurel qui permet d'ajouter dynamiquement de nouveaux comportements ou responsabilités à un objet sans modifier son code. Ce pattern favorise la composition d'objets plutôt que l'héritage pour étendre les fonctionnalités.
+
+Le **Pattern Decorator** permet de :
+
+- Étendre les fonctionnalités d'un objet de manière flexible et dynamique.
+- Empiler plusieurs décorateurs pour combiner leurs comportements.
+- Respecter le principe ouvert/fermé (Open/Closed Principle) en permettant l'extension sans modifier le code existant.
+
+> **Avantage :** Le **Decorator** permet d'ajouter des fonctionnalités à un objet tout en maintenant une structure légère et modulaire, évitant ainsi les combinaisons complexes dans les hiérarchies de classes.
+
+---
+
 ## Annexe C#
 
 ### Composition
