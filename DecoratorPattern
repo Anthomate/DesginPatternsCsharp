@@ -1,0 +1,12 @@
+On a tous les prérequis du pattern :
+
+Une interface commune (ICafe)
+Une classe de base (CafeSimple)
+Un décorateur abstrait (CafeDecorator)
+Des décorateurs concrets (Lait, Sucre)
+
+On peut emballer un café avec d'autres composants de façon dynamique :
+
+monCafe = new Lait(new Sucre(new CafeSimple()));
+
+C'est comme si on prenait un café simple et qu'on l'enveloppait dans du lait puis du sucre, chaque couche ajoute son comportement.
