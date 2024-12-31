@@ -78,6 +78,20 @@ Le **Pattern Singleton** permet de :
 
 ---
 
+### Prototype
+
+Le **Pattern Prototype** est un design pattern de création qui permet de créer de nouveaux objets en clonant des instances existantes au lieu d'instancier des objets directement. Ce pattern est particulièrement utile lorsque la création d'un objet est coûteuse en termes de temps ou de ressources, ou lorsque vous souhaitez éviter de dupliquer des configurations complexes.
+
+Le **Pattern Prototype** permet de :
+
+- Créer de nouveaux objets en copiant des prototypes existants, ce qui peut être plus performant que de créer des objets "from scratch".
+- Simplifier la gestion d'objets complexes en réutilisant des configurations préexistantes.
+- Permettre de modifier indépendamment les instances copiées sans affecter le prototype original.
+
+> **Avantage :** Le **Prototype** offre une grande flexibilité et réduit la duplication de code lors de la création d'objets complexes. Il est particulièrement utile dans les systèmes où la création d'objets doit être dynamique ou basée sur des configurations spécifiques.
+
+---
+
 ## Annexe C#
 
 ### Composition
