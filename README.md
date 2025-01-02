@@ -182,6 +182,140 @@ Le **Pattern Chain of Responsibility** permet de :
 ![Chain Of Responsability](PatternChainOfResponsability.png)
 
 ---
+
+# Utilisation des Design Patterns en C#
+
+## Cas pratiques et solutions
+
+### 1. Créer efficacement de nouveaux contrats en évitant de les recréer à partir de zéro
+- **Pattern : Prototype**  
+  Ce pattern permet de créer des objets en clonant un prototype existant, ce qui évite la réinstanciation depuis zéro.  
+  **Utilisation typique** : Réutiliser des configurations complexes sans duplication de code.
+
+---
+
+### 2. Assurer qu'une classe ait une seule instance (ex. gestionnaire de configuration, connexion à une base de données)
+- **Pattern : Singleton**  
+  Garantit qu’une classe dispose d’une unique instance tout en fournissant un accès global à celle-ci.  
+  **Utilisation typique** : Gestion de ressources partagées ou centralisation d'un état global.
+
+---
+
+### 3. Construire des objets complexes étape par étape, avec une flexibilité pour varier leur représentation finale
+- **Pattern : Builder**  
+  Permet de construire des objets complexes en suivant des étapes claires et réutilisables.  
+  **Utilisation typique** : Création d'objets nécessitant de multiples configurations.
+
+---
+
+### 4. Changer dynamiquement le comportement d’un objet sans modifier son code
+- **Pattern : Decorator**  
+  Ajoute dynamiquement des responsabilités à un objet existant sans modifier son code source.  
+  **Utilisation typique** : Étendre ou combiner des comportements sur mesure sans héritage.
+
+---
+
+### 5. Créer des objets appartenant à des familles sans coupler le code à leurs classes concrètes
+- **Pattern : Abstract Factory**  
+  Permet de créer des groupes d’objets apparentés en masquant les détails de leur instanciation.  
+  **Utilisation typique** : Génération d’interfaces utilisateurs ou composants dépendant de contextes spécifiques.
+
+---
+
+### 6. Créer une interface entre deux systèmes ou classes incompatibles
+- **Pattern : Adapter**  
+  Transforme une interface existante pour la rendre compatible avec une autre.  
+  **Utilisation typique** : Intégrer des bibliothèques tierces sans modification de leur code.
+
+---
+
+### 7. Encapsuler une action ou une requête en tant qu'objet, pour permettre leur paramétrage, mise en file d'attente, ou annulation
+- **Pattern : Command**  
+  Transforme une action en objet autonome, offrant des fonctionnalités comme l'annulation ou la file d’attente.  
+  **Utilisation typique** : Systèmes à commandes multiples (ex. annuler/rétablir dans une application).
+
+---
+
+### 8. Gérer une requête via une chaîne de plusieurs objets potentiellement responsables de son traitement
+- **Pattern : Chain of Responsibility**  
+  Permet de transmettre une requête à travers une chaîne d’objets jusqu’à ce qu’un d’eux la traite.  
+  **Utilisation typique** : Validation de données ou gestion de permissions en cascade.
+
+---
+
+### 9. Découpler une abstraction et son implémentation pour permettre des évolutions indépendantes
+- **Pattern : Bridge**  
+  Sépare l’abstraction de son implémentation, offrant une plus grande flexibilité.  
+  **Utilisation typique** : Systèmes où abstraction et implémentation évoluent séparément.
+
+---
+
+### 10. Composer des objets en structures arborescentes tout en permettant de traiter les objets simples et composites de manière uniforme
+- **Pattern : Composite**  
+  Permet de structurer des objets sous forme de hiérarchies tout en uniformisant leur traitement.  
+  **Utilisation typique** : Représentation d’arbres ou de structures hiérarchiques comme des menus.
+
+---
+
+## Comparaison pour des problématiques similaires
+
+### Ajouter dynamiquement des fonctionnalités à un objet
+- **Patterns possibles** :
+  - **Decorator** : Ajoute dynamiquement des responsabilités à un objet existant, souvent en empilant des comportements.  
+  - **Strategy** : Permet de changer dynamiquement le comportement d’un objet en lui appliquant une implémentation différente.
+
+- **Justification** :
+  - **Decorator** est idéal pour empiler des comportements additionnels.  
+  - **Strategy** convient mieux pour modifier complètement la logique d'un objet.
+
+---
+
+### Gérer des requêtes dynamiques avec des conditions variées pour leur traitement
+- **Patterns possibles** :
+  - **Chain of Responsibility** : Transmet une requête à travers plusieurs objets jusqu’à son traitement.  
+  - **Command** : Encapsule la requête sous forme d’objet, pour annulation ou mise en file d’attente.
+
+- **Justification** :
+  - **Chain of Responsibility** est idéal pour distribuer les responsabilités.  
+  - **Command** est utile pour manipuler directement les requêtes.
+
+---
+
+### S'assurer qu’un objet ou une ressource est unique
+- **Patterns possibles** :
+  - **Singleton** : Assure qu’une seule instance existe dans tout le programme.  
+  - **Factory Method** : Peut garantir une unicité via des instances contrôlées.
+
+- **Justification** :
+  - **Singleton** est la solution la plus standardisée.  
+  - **Factory Method** offre une flexibilité si la gestion d’instances doit évoluer.
+
+---
+
+### Créer des objets sans exposer la logique de leur instanciation
+- **Patterns possibles** :
+  - **Abstract Factory** : Fournit un moyen de créer des familles d'objets.  
+  - **Factory Method** : Génère un seul objet spécifique à la fois.
+
+- **Justification** :
+  - **Abstract Factory** convient pour des objets regroupés par famille.  
+  - **Factory Method** est plus simple et ciblé pour des objets uniques.
+
+---
+
+### Structurer une application en plusieurs niveaux d'abstraction
+- **Patterns possibles** :
+  - **Bridge** : Découple abstraction et implémentation pour évoluer indépendamment.  
+  - **Adapter** : Simplifie l'intégration de classes ou systèmes existants.
+
+- **Justification** :
+  - **Bridge** est idéal pour abstractions et implémentations évolutives.  
+  - **Adapter** s'applique mieux pour intégrer des systèmes tiers.
+
+---
+
+
+
 ## Annexe C#
 
 ### Composition
