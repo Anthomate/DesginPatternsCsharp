@@ -12,7 +12,7 @@ Un **Design Pattern** est un schéma réutilisable pour résoudre des problèmes
 
 Les **Design Patterns** sont classés en trois catégories principales, selon leur objectif et leur mode d'application :
 
-1. **Patterns de création**  
+1. **Patterns de construction**  
     Ces patterns se concentrent sur le processus de création d'objets, en fournissant des solutions pour abstraire ou cacher les détails complexes liés à l'instanciation.
     
     - **Exemples :** Singleton, Factory Method, Abstract Factory, Builder, Prototype.
@@ -41,12 +41,15 @@ Les **Design Patterns** ne sont pas du code prêt à l'emploi, mais des solution
 
 ## Patterns de Construction
 
+
 ### Pattern Abstract Factory
 Le **Pattern Abstract Factory** permet de :
 - Créer des objets regroupés en familles.
 - Découpler la logique de création des objets des classes concrètes, en se basant sur des interfaces communes.
 
 > **Avantage :** Favorise l'extensibilité et la flexibilité en permettant de changer la famille d'objets sans modifier le code.
+
+![[Pasted image 20250102111921.png]]
 
 ---
 
@@ -60,7 +63,7 @@ Le **Pattern Builder** permet de :
 
 > **Avantage :** Le **Builder** améliore la lisibilité et maintenabilité du code en rendant explicite chaque étape de construction. Il est particulièrement utile lorsque l'objet nécessite une configuration complexe.
 
-
+![[Pasted image 20250102112000.png]]
 
 ---
 
@@ -90,7 +93,11 @@ Le **Pattern Prototype** permet de :
 
 > **Avantage :** Le **Prototype** offre une grande flexibilité et réduit la duplication de code lors de la création d'objets complexes. Il est particulièrement utile dans les systèmes où la création d'objets doit être dynamique ou basée sur des configurations spécifiques.
 
+![[Pasted image 20250102112104.png]]
+
 ---
+
+## Patterns de Structurel
 
 ### Adapter
 
@@ -103,6 +110,8 @@ Le **Pattern Adapter** permet de :
 - Favoriser l'intégration de systèmes ou de bibliothèques externes.
 
 > **Avantage :** Le **Adapter** améliore l'interopérabilité et favorise la réutilisation de code existant sans nécessiter de modifications importantes. Cela permet de réduire le couplage entre les composants d'une application.
+
+![[Pasted image 20250102112145.png]]
 
 ---
 
@@ -118,6 +127,8 @@ Le **Pattern Bridge** permet de :
 
 > **Avantage :** Le **Bridge** améliore la modularité et réduit la complexité en permettant de modifier ou étendre les abstractions et les implémentations de manière indépendante.
 
+![[Pasted image 20250102112217.png]]
+
 ---
 
 ### Decorator
@@ -132,8 +143,28 @@ Le **Pattern Decorator** permet de :
 
 > **Avantage :** Le **Decorator** permet d'ajouter des fonctionnalités à un objet tout en maintenant une structure légère et modulaire, évitant ainsi les combinaisons complexes dans les hiérarchies de classes.
 
+![[Pasted image 20250102112247.png]]
+
 ---
 
+## Patterns de Comportementaux
+
+
+### Command
+
+Le **Pattern Command** est un design pattern comportemental qui transforme une requête ou une action en un objet autonome. Ce pattern permet de paramétrer des objets avec des opérations, de les mettre en file d’attente, ou de les exécuter ultérieurement, tout en favorisant un découplage entre les émetteurs et les récepteurs des requêtes.
+
+Le **Pattern Command** permet de :
+
+- Découpler l'émetteur d'une commande de son exécution.
+- Encapsuler des requêtes en tant qu'objets pour les passer comme arguments ou les stocker.
+- Implémenter des fonctionnalités comme l'annulation (undo) ou la réexécution (redo).
+
+> **Avantage :** Le **Command** simplifie la gestion des actions complexes et favorise l'extensibilité du système en permettant d'ajouter de nouvelles commandes sans modifier le code existant.
+
+![[Pasted image 20250102112319.png]]
+
+---
 ## Annexe C#
 
 ### Composition
