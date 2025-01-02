@@ -1,0 +1,10 @@
+### Comment votre solution permettrait-elle d'ajouter facilement un nouveau type de document (par exemple une attestation fiscale) tout en respectant le principe Open/Closed ?
+
+Ma solution avec le pattern Abstract Factory respecte le principe Open/Closed car elle sépare les abstractions des implémentations. Pour ajouter un nouveau type de document on doit :
+
+- Créer une nouvelle interface ou classe abstraite pour ce document.
+- Ajouter une implémentation concrète pour l'attestation fiscale.
+- Étendre l'interface de la fabrique abstraite avec une méthode de création pour ce document.
+- Mettre à jour les fabriques concrètes pour ajouter cette nouvelle méthode.
+
+Aucune modification des classes existantes n'est donc nécessaire, juste de l'ajout.
