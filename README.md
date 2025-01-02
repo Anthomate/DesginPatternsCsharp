@@ -32,7 +32,7 @@ Voici quelques exemples courants de Design Patterns :
 - **Repository**
 - **Prototype**
 
-![[Pasted image 20241230095232.png]]
+![DesignPatterns](DesignPatterns.png)
 
 ### À retenir :
 Les **Design Patterns** ne sont pas du code prêt à l'emploi, mais des solutions conceptuelles pour structurer efficacement votre code et résoudre des problèmes récurrents.
@@ -49,8 +49,8 @@ Le **Pattern Abstract Factory** permet de :
 
 > **Avantage :** Favorise l'extensibilité et la flexibilité en permettant de changer la famille d'objets sans modifier le code.
 
-![[Pasted image 20250102111921.png]]
 
+![Abstract Factory](Img/PatternAbstractFactory.png)
 ---
 
 ### Pattern Builder
@@ -63,7 +63,8 @@ Le **Pattern Builder** permet de :
 
 > **Avantage :** Le **Builder** améliore la lisibilité et maintenabilité du code en rendant explicite chaque étape de construction. Il est particulièrement utile lorsque l'objet nécessite une configuration complexe.
 
-![[Pasted image 20250102112000.png]]
+
+![Builder](Img/PatternBuilder.png)
 
 ---
 
@@ -93,7 +94,7 @@ Le **Pattern Prototype** permet de :
 
 > **Avantage :** Le **Prototype** offre une grande flexibilité et réduit la duplication de code lors de la création d'objets complexes. Il est particulièrement utile dans les systèmes où la création d'objets doit être dynamique ou basée sur des configurations spécifiques.
 
-![[Pasted image 20250102112104.png]]
+![Prototype](Img/PatternPrototype.png)
 
 ---
 
@@ -111,7 +112,7 @@ Le **Pattern Adapter** permet de :
 
 > **Avantage :** Le **Adapter** améliore l'interopérabilité et favorise la réutilisation de code existant sans nécessiter de modifications importantes. Cela permet de réduire le couplage entre les composants d'une application.
 
-![[Pasted image 20250102112145.png]]
+![Adapter](Img/PatternAdapter.png)
 
 ---
 
@@ -127,7 +128,7 @@ Le **Pattern Bridge** permet de :
 
 > **Avantage :** Le **Bridge** améliore la modularité et réduit la complexité en permettant de modifier ou étendre les abstractions et les implémentations de manière indépendante.
 
-![[Pasted image 20250102112217.png]]
+![Bridge](Img/PatternBridge.png)
 
 ---
 
@@ -143,7 +144,7 @@ Le **Pattern Decorator** permet de :
 
 > **Avantage :** Le **Decorator** permet d'ajouter des fonctionnalités à un objet tout en maintenant une structure légère et modulaire, évitant ainsi les combinaisons complexes dans les hiérarchies de classes.
 
-![[Pasted image 20250102112247.png]]
+![Decorator](Img/PatternDecorator.png)
 
 ---
 
@@ -162,7 +163,23 @@ Le **Pattern Command** permet de :
 
 > **Avantage :** Le **Command** simplifie la gestion des actions complexes et favorise l'extensibilité du système en permettant d'ajouter de nouvelles commandes sans modifier le code existant.
 
-![[Pasted image 20250102112319.png]]
+![Command](Img/PatternCommand.png)
+
+---
+
+### Chain of Responsibility
+
+Le **Pattern Chain of Responsibility** est un design pattern comportemental qui permet de passer une requête à travers une chaîne d'objets potentiellement responsables de son traitement. Chaque objet de la chaîne décide soit de traiter la requête, soit de la transmettre à l'objet suivant dans la chaîne.
+
+Le **Pattern Chain of Responsibility** permet de :
+
+- Découpler l'émetteur d'une requête de ses éventuels gestionnaires.
+- Faciliter l'ajout ou la modification des gestionnaires sans changer le code existant.
+- Gérer dynamiquement des responsabilités en fonction de la configuration ou du contexte.
+
+> **Avantage :** Le **Chain of Responsibility** offre une solution flexible pour gérer des requêtes complexes tout en réduisant le couplage entre les émetteurs et les gestionnaires.
+
+![Chain Of Responsability](PatternChainOfResponsability.png)
 
 ---
 ## Annexe C#
